@@ -1,0 +1,18 @@
+[
+	{
+		"ParameterKey": "StackName",
+		"ParameterValue": "devops-capstone"
+	},
+	{
+		"ParameterKey": "Subnets",
+		"ParameterValue": "subnet-015d8365ddda6b560,subnet-053c5da40f326862e,subnet-05628eeefe5669ebf"
+	},
+	{
+		"ParameterKey": "SecurityGroup",
+		"ParameterValue": "sg-08f26f308f5a70059"
+	},
+	{
+		"ParameterKey": "ClusterName",
+		"ParameterValue": "devops-capstone-cluster"
+	}
+]

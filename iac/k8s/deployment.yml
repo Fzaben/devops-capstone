@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: capstone-app-dep
+  labels:
+    app: capstone-app-dep
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: capstone-app-dep
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: capstone-app-dep
+    spec:
+      containers:
+        - image: fzaben/capstone-app:latest
+          name: capstone-app
+          ports:
+            - containerPort: 80
+              name: http-server
+      imagePullSecrets:
+        - name: ecr-secret
