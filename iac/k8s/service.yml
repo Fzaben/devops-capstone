@@ -4,7 +4,7 @@ metadata:
   name: capstone-app-svc
   labels:
     name: capstone-app-dep
-  namespace: default
+  namespace: dep
 spec:
   selector:
     app: capstone-app-dep
