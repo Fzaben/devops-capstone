@@ -4,7 +4,6 @@ metadata:
   name: capstone-app-dep
   labels:
     app: capstone-app-dep
-  namespace: dep
 spec:
   replicas: 2
   selector:
@@ -22,7 +21,7 @@ spec:
     spec:
       containers:
         - image: fzaben/capstone-app:latest
-          name: capstone-app
+          name: capstone-app-dep
           ports:
             - containerPort: 80
               name: http-server
