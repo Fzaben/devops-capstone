@@ -20,7 +20,7 @@ spec:
         app: capstone-app-dep
     spec:
       containers:
-        - image: fzaben/capstone-app:13
+        - image: fzaben/capstone-app:latest
           name: capstone-app-dep
           ports:
             - containerPort: 80
